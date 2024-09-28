@@ -1,54 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
 }
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+	width: 100vw;
 }
 
 header{
-    width: 100vw;
-    height: 150px;
-    background-color: #1e56aa;
-    position: fixed;
-    
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px 2px;
+
+	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
-nav{
-    background-color: #5779ad;
-    color: #ffffff;
+header > h1{
+	flex: 0 0 200px;
 }
 
-nav::after {
-	display: block;
-	content: '';
-	clear: both;
+header > nav{
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
 }
 
-nav ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-nav ul li {
-	float: left;
-	position: relative;
-}
-nav ul li a {
-	display: block;
-	color: rgba(255, 255, 255, 0.9);
+header > nav > a{
+	padding: 10px;
+	color: #ffffff;
+	margin: 5px 20px;
 	text-decoration: none;
-	padding: 0.7rem 3rem;
-	transition: all .3s ease-in-out;
+	text-align: center;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-	background: rgba(0, 0, 0, .15);
+header > nav > a:hover{
+	background-color: #ffffff;
+	color: black;
+	transition: background-color .5s;
 }
 
